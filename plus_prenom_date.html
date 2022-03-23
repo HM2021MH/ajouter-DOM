@@ -12,25 +12,26 @@
 
     </head>
     <body>
+  
         <div style="width: 60%; height: 40%; margin-left: 60px; margin-top: 40px;">
         <center> <h3 > Ajouter DOM (avec validation ) </h3></center>
         <hr>
       <label class="col-sm-2 col-form-label" > Nom : </label>
       <input type="text" class="form-control" id="nom" onclick="vider()">  
+
       <span class="alert-danger" id="erreur1" ></span>
        <span class="alert-success" id="valide1"></span>
       
 <div id="test">
-      
+ 
 </div>
 
-      <div style="padding: 10px;">
+      <div style="padding: 10px;" id="space">
       <input type="submit" id="mh" class="btn btn-secondary" onclick="valide_nom()"> 
-<span id="ajout" > <input type="submit" class="btn btn-secondary" onclick="ajouter()" value="Ajouter prénom" > <span> 
+<span id="ajout" > <input type="submit" class="btn btn-secondary" onclick="ajouter()" value="Ajouter prénom" > </span>  
  </div>
 
-       
-       
        </div>
+    
     </body>
 </html>
