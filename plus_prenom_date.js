@@ -40,6 +40,7 @@ function vider()
 
 function ajouter()
 {
+    let body=document.getElementB
     let div = document.getElementById("test");
 //ajout du label  
     let label_prenom=document.createElement("label");
@@ -47,6 +48,7 @@ function ajouter()
     label_prenom.setAttribute("class","col-sm-2 col-form-label");
     div.appendChild(label_prenom);
  document.getElementById('label').innerHTML =' Prénom:'; 
+
 //ajout du champ 
  let prenom=document.createElement("input");
     prenom.setAttribute("type","text");
@@ -68,13 +70,11 @@ function ajouter()
     err.setAttribute("class","alert-danger" );
     div.appendChild(err);
 
-
 //changemant valeur et comportement du bouton ajouter 
  
  document.getElementById('ajout').innerHTML ='<input type="submit" class="btn btn-secondary" onclick="ajouter1()" value="Ajouter date naissance" id="btn">';
-
-
  } 
+
 function ajouter1()
 {
     let div = document.getElementById("test");
@@ -91,11 +91,8 @@ function ajouter1()
     date.setAttribute("class","form-control");
     date.setAttribute("onclick","vider()");
     div.appendChild(date);
-//supprression bouton d'ajout DOM
-document.getElementById('ajout').innerHTML =''; 
+//supprression bouton d'ajout DOM 
+document.getElementById('ajout').innerHTML ='';
+
+
 }
-
-
-
-
-
